@@ -6,7 +6,7 @@
 #    By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/02/03 17:57:20 by eviscont          #+#    #+#              #
-#    Updated: 2024/02/03 18:01:21 by eviscont         ###   ########.fr        #
+#    Updated: 2024/02/14 15:18:25 by eviscont         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,10 +14,10 @@
 CFLAGS = -Wall -Wextra -Werror
 
 # Nombre ejecutable
-NAME = 
+NAME = so_long
 
 # Ficheros
-SRCS =
+SRCS = map1.c
 OBJS = $(SRCS:.c=.o)
 HEADER = so_long.h
 
