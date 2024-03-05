@@ -1,28 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_unsign.c                                  :+:      :+:    :+:   */
+/*   utils_bonus.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/10/30 10:08:56 by eviscont          #+#    #+#             */
-/*   Updated: 2024/02/19 11:28:32 by eviscont         ###   ########.fr       */
+/*   Created: 2024/03/04 16:45:32 by eviscont          #+#    #+#             */
+/*   Updated: 2024/03/04 16:46:00 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../libft.h"
+#include "so_long_bonus.h"
 
-void	ft_print_unsign(long int c, int *length)
+void	free_doublepointer(char **array)
 {
-	if (c < 0)
+	int	i;
+
+	i = 0;
+	while (array[i] != 0)
 	{
-		ft_print_unsign(c * -1, length);
+		free(array[i]);
+		i++;
 	}
-	else if (c > 9)
-	{
-		ft_print_unsign(c / 10, length);
-		ft_print_unsign(c % 10, length);
-	}
-	else
-		ft_print_char(c + 48, length);
+	free(array);
 }

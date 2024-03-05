@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/29 15:04:50 by eviscont          #+#    #+#             */
-/*   Updated: 2024/02/02 12:52:50 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/02/20 12:04:00 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ static int	count_str(char const *str, char c)
 	return (p);
 }
 
-static char	*free_all(char **array)
+static void	free_all(char **array)
 {
 	int	i;
 
@@ -40,7 +40,6 @@ static char	*free_all(char **array)
 		i++;
 	}
 	free(array);
-	return (0);
 }
 
 static char	**split_fill(char const *s, char c, char **array)
@@ -64,7 +63,7 @@ static char	**split_fill(char const *s, char c, char **array)
 		{
 			free_all(array);
 			return (0);
-		}		
+		}
 		i++;
 	}
 	array[i] = NULL;

@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/09/14 16:20:52 by eviscont          #+#    #+#             */
-/*   Updated: 2024/02/02 16:20:34 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/02/19 11:29:04 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -81,7 +81,7 @@ void	ft_print_number(int c, int *length);
 void	ft_print_pointer(size_t c, int *length);
 void	ft_print_str(char *s, int *length);
 void	ft_print_to_base(size_t c, char *base, int *length);
-void	ft_print_unsign(unsigned int c, int *length);
+void	ft_print_unsign(long int c, int *length);
 
 //get_next_line functions
 

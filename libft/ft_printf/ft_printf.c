@@ -6,7 +6,7 @@
 /*   By: eviscont <eviscont@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/10/16 14:49:39 by eviscont          #+#    #+#             */
-/*   Updated: 2024/02/02 16:16:52 by eviscont         ###   ########.fr       */
+/*   Updated: 2024/02/19 11:28:44 by eviscont         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ static int	ft_get_format(va_list *list, char c, int *length)
 	else if (c == 'i' || c == 'd')
 		ft_print_number(va_arg(*list, int), length);
 	else if (c == 'u')
-		ft_print_unsign(va_arg(*list, unsigned int), length);
+		ft_print_unsign(va_arg(*list, long int), length);
 	else if (c == 'x')
 		ft_print_to_base(va_arg(*list, unsigned int), HEXA_MI, length);
 	else if (c == 'X')
